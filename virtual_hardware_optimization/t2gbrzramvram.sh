@@ -6,7 +6,8 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
-echo "Plugetk Virtual Ram creating... "
+echo "Plugetk: "
+echo "Virtual Ram creating... "
 
 swapoff /dev/zram0 2>/dev/null
 echo 1 > /sys/block/zram0/reset 2>/dev/null
